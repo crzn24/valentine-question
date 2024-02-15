@@ -22,6 +22,13 @@ let puppyGifs = [
 let currentGifIndex = 0;
 
 penguinsButton.addEventListener("click", function () {
+  // Toggle active class
+  penguinsButton.classList.add("active");
+  puppiesButton.classList.remove("active");
+  // Debugging: Log button states
+  //console.log("Penguins button active:", penguinsButton.classList.contains("active"));
+  //console.log("Puppies button active:", puppiesButton.classList.contains("active"));
+
   showValentineSection(penguinGifs[0]);
 });
 
@@ -62,9 +69,11 @@ noButton.addEventListener("click", function () {
 yesButton.addEventListener("click", function () {
   if (currentGifIndex === 0) {
     currentGifIndex = 1; // Move to the second GIF after clicking "Yes"
+    //console.log("Penguins button active:", penguinsButton.classList.contains("active"));
     let selectedGifs = penguinsButton.classList.contains("active")
       ? penguinGifs
       : puppyGifs;
+    //console.log("Selected GIFs:", selectedGifs);
     valentineGif.src = selectedGifs[currentGifIndex];
     yesText.textContent = "You said YES!";
     yesButton.style.display = "none";
