@@ -27,3 +27,9 @@ button {
 .hidden {
   display: none;
 }
+
+/* Add this CSS to adjust the initial size of the Yes button */
+#yesButton {
+  width: 100px;
+  height: 40px;
+}
