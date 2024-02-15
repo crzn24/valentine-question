@@ -9,14 +9,14 @@ let yesText = document.getElementById("yesText");
 
 // Paths to penguin GIFs
 let penguinGifs = [
-  "/src/assets/images/penguin1.gif",
-  "/src/assets/images/penguin2.gif",
+  "assets/images/penguin1.gif",
+  "assets/images/penguin2.gif",
 ];
 
 // Paths to puppy GIFs
 let puppyGifs = [
-  "/src/assets/images/puppy1.gif",
-  "/src/assets/images/puppy2.gif",
+  "assets/images/puppy1.gif",
+  "assets/images/puppy2.gif",
 ];
 
 let currentGifIndex = 0;
