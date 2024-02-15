@@ -1,5 +1,17 @@
-.container {
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
   text-align: center;
+}
+
+.container {
+  margin-bottom: 20px;
 }
 
 .buttons {

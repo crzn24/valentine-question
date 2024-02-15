@@ -75,7 +75,7 @@ yesButton.addEventListener("click", function () {
       : puppyGifs;
     //console.log("Selected GIFs:", selectedGifs);
     valentineGif.src = selectedGifs[currentGifIndex];
-    yesText.textContent = "You said YES!";
+    yesText.textContent = "Yay! I love you!";
     yesButton.style.display = "none";
     noButton.style.display = "none";
   }
